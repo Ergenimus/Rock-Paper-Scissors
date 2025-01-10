@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnRock = new System.Windows.Forms.Button();
             this.btnPaper = new System.Windows.Forms.Button();
             this.btnScissors = new System.Windows.Forms.Button();
@@ -79,6 +80,8 @@
             // 
             // CPU_PIC
             // 
+            this.CPU_PIC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CPU_PIC.Cursor = System.Windows.Forms.Cursors.No;
             this.CPU_PIC.Location = new System.Drawing.Point(339, 38);
             this.CPU_PIC.Name = "CPU_PIC";
             this.CPU_PIC.Size = new System.Drawing.Size(115, 100);
@@ -88,6 +91,7 @@
             // 
             // PLAYER_PIC
             // 
+            this.PLAYER_PIC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PLAYER_PIC.Location = new System.Drawing.Point(339, 188);
             this.PLAYER_PIC.Name = "PLAYER_PIC";
             this.PLAYER_PIC.Size = new System.Drawing.Size(115, 100);
@@ -143,6 +147,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblCPUresult);
@@ -154,6 +159,7 @@
             this.Controls.Add(this.btnScissors);
             this.Controls.Add(this.btnPaper);
             this.Controls.Add(this.btnRock);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Game";
             ((System.ComponentModel.ISupportInitialize)(this.CPU_PIC)).EndInit();
